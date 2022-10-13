@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body {
+      font: 100% Lucida Sans, Verdana;
+      margin: 20px;
+      line-height: 26px;
+    }
+
+    .container {
+      xmin-width: 900px;
+    }
+    .wrapper {
+      position: relative;
+      overflow: auto;
+    }
+
+    #top, #left, #bottom, .menuitem {
+      border-radius: 4px;
+      margin: 4px;
+    }
+
+    #top {
+      background-color: #04AA6D;
+      color: #ffffff;
+      pading: 15px;
+    }
+
+    #left { /* menubar와 같음 */
+      width: 200px;
+      float: left /* 왼쪽정렬 기능인 듯하다. 왼쪽 menubar들이 왼쪽에 붙고, 밑에 들어갔던 내용이 오른쪽에 붙었다. 근데 왜 여기에는 ;를 안 쓰는지 모르겠다 */
+    }
+
+
+  </style>
+</head>
+<body>
+<div id="container">
+  <div id="top">
+    <h1>Welcome to 21700185's Homepagedd</h1>
+    <p>Use the menu to select different Stylesheets</p>
+  </div>
+  <div id="wrapper">
+    <div id="left">
+      <ul>
+        <li class="menuitem">
+          Stylesheet 1
+        </li>
+        <li class="menuitem">
+          Stylesheet 2
+        </li>
+        <li class="menuitem">
+          Stylesheet 3
+        </li>
+        <li class="menuitem">
+          Stylesheet 4
+        </li>
+        <li class="menuitem">
+          No Stylesheet
+        </li>
+      </ul>
+    </div>
+    <div id="center">
+      <h1>Same Page Different Stylesheets</h1>
+      <p>
+        This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+        <br>
+        <a href="#">Stylesheet1</a>,
+        <a href="#">Stylesheet2</a>,
+        <a href="#">Stylesheet3</a>,
+        <a href="#">Stylesheet4</a>.
+      </p>
+      <h2>No Styles</h2>
+      <p>
+        This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+        <br>
+        <a href="#">No Stylesheet</a>.
+      </p>
+    </div>
+    <div id="right">
+      <h3>Side-Bar</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+  </div>
+  <div id="bottom">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+  </div>
+</div>
+</body>
+</html>
