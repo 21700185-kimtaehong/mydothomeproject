@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>21700185style1</title>
   <style>
     body {
       font: 100% Lucida Sans, Verdana;
@@ -10,15 +10,16 @@
       line-height: 26px;
     }
 
-    .container {
+    #container {
       xmin-width: 900px;
     }
-    .wrapper {
+    #wrapper {
+      /*예제에서는 .으로 되어있는 이유: .은 class에, #은 id에 적용이기 때문*/
       position: relative;
       overflow: auto;
     }
 
-    #top, #left, #bottom, .menuitem {
+    #top, #right, #bottom, .menuitem {
       border-radius: 4px;
       margin: 4px;
     }
@@ -26,7 +27,7 @@
     #top {
       background-color: #04AA6D;
       color: #ffffff;
-      pading: 15px;
+      padding: 15px;
     }
 
     #left { /* menubar와 같음 */
@@ -34,7 +35,88 @@
       float: left /* 왼쪽정렬 기능인 듯하다. 왼쪽 menubar들이 왼쪽에 붙고, 밑에 들어갔던 내용이 오른쪽에 붙었다. 근데 왜 여기에는 ;를 안 쓰는지 모르겠다 */
     }
 
+    #center { /*main과 같음*/
+      padding: 10px;
+      margin: 0 210px;
+    }
 
+    #right {
+      /*  sidebard와 같음*/
+      background-color: #32a4e7;
+      color: #ffffff;
+      padding: 10px;
+      width: 180px;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      position: absolute;
+    }
+
+    #bottom {
+      border: 1px solid #d4d4d4;
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 10px;
+      font-size: 70%;
+      line-height: 14px;
+    }
+
+    #top h1, #top p, #menulist {
+      /*굳이 ul에 id 넣어야하는 이유, ul에 따로 설정하지 않으면 자체 padding이 있음*/
+      margin: 0;
+      padding: 0;
+    }
+
+    .menuitem {
+      /*왼쪽 sidebar(여기서는 left)의 테두리 모양*/
+      background-color: #f1f1f1;
+      border: 1px solid #d4d4d4;
+      list-style-type: none;
+      padding: 2px;
+      cursor: pointer;
+    }
+
+    .menuitem:hover {
+      background-color: #ffffff;
+    }
+    /*현재 stylesheet가 1이기 때문에 1번에 색칠해주기*/
+    .menuitem:first-child {
+      background-color: #04aa6d;
+      color: white;
+      font-weight: bold;
+    }
+
+    a {
+      /* html에서 a 는 하이퍼링크 텍스트를 의미함*/
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      /* decoration none 을 해주는 이유는 자체적으로 스타일이 a에 적용되어 있어서?*/
+      text-decoration: none;
+    }
+
+    @media (max-width: 800px) {
+      #sidebar {
+        width: auto;
+        position: relative;
+      }
+      #center {
+      /*  main과 같음*/
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      #menubar {
+        width: auto;
+        float: none;
+      }
+      #center {
+        margin: 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -45,7 +127,7 @@
   </div>
   <div id="wrapper">
     <div id="left">
-      <ul>
+      <ul id="menulist">
         <li class="menuitem">
           Stylesheet 1
         </li>

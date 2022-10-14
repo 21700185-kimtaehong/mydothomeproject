@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a867f38-d86b-411a-acd2-9185b0bf517c" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/.idea/Myhome/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Myhome/nostyle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mydothomeproject.iml" afterDir="false" />
+    <list default="true" id="6a867f38-d86b-411a-acd2-9185b0bf517c" name="Changes" comment="css working style1">
+      <change afterPath="$PROJECT_DIR$/.idea/Myhome/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Myhome/style2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Myhome/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Myhome/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Myhome/nostyle.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Myhome/nostyle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Myhome/style1.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Myhome/style1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +49,8 @@
     "WebServerToolWindowPanel.toolwindow.show.date": "false",
     "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
     "WebServerToolWindowPanel.toolwindow.show.size": "false",
-    "last_opened_file_path": "C:/Users/김태홍/IdeaProjects/mydothomeproject/.idea/Myhome"
+    "last_opened_file_path": "C:/Users/김태홍/IdeaProjects/mydothomeproject/.idea/Myhome",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -78,8 +77,24 @@
       <option name="presentableId" value="Default" />
       <updated>1665127179494</updated>
       <workItem from="1665127180870" duration="5684000" />
-      <workItem from="1665641407105" duration="1874000" />
+      <workItem from="1665641407105" duration="2150000" />
+      <workItem from="1665709404744" duration="16316000" />
     </task>
+    <task id="LOCAL-00001" summary="css working style1">
+      <created>1665643502061</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665643502061</updated>
+    </task>
+    <task id="LOCAL-00002" summary="css working style1">
+      <created>1665643540251</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665643540251</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +114,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="css working style1" />
+    <option name="LAST_COMMIT_MESSAGE" value="css working style1" />
   </component>
 </project>

@@ -2,19 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>21700185nostyle</title>
+  <title>21700185style2</title>
   <style>
+    body {
+      font-family: Arial;
+      background-color: #d14836;
+      line-height: 20px;
+    }
+
+    #container{
+      xmin-width: 900px;
+    }
+
+    #wrapper {
+      position: relative;
+      overflow: auto;
+    }
+
+    #top {
+      color: #ffffff;
+      padding: 15px;
+      font-size: 30px;
+      line-height: 26px;
+    }
+
+    #top h1 {
+      margin:0;
+      line-height: 50px;
+    }
+
+    #left { /*#menubar*/
+      width: 190px;
+      float: right;
+    /*  left는 ;가 없었는데 왜 right는 있을까 상관이 없나?*/
+    }
+
+    #center { /*#main*/
+      padding: 10px;
+      background-color: #ffffff;
+      font: 80% Verdana;
+    }
+
+    #center h1, #center h2 {
+      color: #d14836;
+    }
+
+    #right {
+      background-color: #f6dad7;
+      color: #d14836;
+      padding: 10px;
+      /* center, right의 padding을 맞춰서 칸을 맞춰줌 */
+    }
+
+    #bottom {
+      text-align: center;
+      padding: 10px;
+      font-size: 70%;
+      color: #ffffff;
+    }
+
+    #menulist {
+      padding: 0;
+      font: 16px verdana;
+    }
+
+    .menuitem{
+    /*  얘는 class이기 때문*/
+      width: 155px;
+      background-color: #d14836;
+      border: 1px solid #d14836;
+      border-radius: 40px;
+      color: #ffffff;
+      list-style-type: none;
+      margin: 10px;
+      padding: 5px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .menuitem:nth-child(2) { /*  menuitem 의 두 번째 항목이라는 뜻. style2이기 때문*/
+      background-color: white;
+      color: #d14836;
+      font-weight: bold;
+    }
+
+    .menuitem:hover {
+      background-color: #ffffff;
+      color: #d14836;
+    }
+
+    a {
+      color: #d14836;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 <div id="container">
   <div id="top">
-    <h1>Welcome to 21700185's Homepage</h1>
+    <h1>Welcome to 21700185's Homepagedd</h1>
     <p>Use the menu to select different Stylesheets</p>
   </div>
   <div id="wrapper">
     <div id="left">
-      <ul>
+      <ul id="menulist">
         <li class="menuitem">
           Stylesheet 1
         </li>
