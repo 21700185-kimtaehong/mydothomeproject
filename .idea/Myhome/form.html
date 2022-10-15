@@ -3,15 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>21700185form</title>
+        <style>
+            #fieldset1 {
+                width: 50px;
+            }
+        </style>
     </head>
-    <body>
+    <body id="body">
         <h2>21700185 김태홍 학생등록 페이지</h2>
         <div>
-            <form>
+            <form name="form185" action="form_ok.php" method="post">
                 <!-- 이름입력 -->
-                <label for="stname">이름:</label><br>
-                <input type="text" id="sname" name="sname"><br>
+                <label for="stname">이름:</label>
+                <input type="text" id="sname" name="sname"><br><br>
+
                 <!-- 학년입력 -->
+                <strong>학년을 골라주세요</strong><br>
                 <input type="radio" id="1grade" name="grade" value="1">
                 <label for="1grade">1학년</label><br>
                 <input type="radio" id="2grade" name="grade" value="2">
@@ -19,11 +26,66 @@
                 <input type="radio" id="3grade" name="grade" value="3">
                 <label for="3grade">3학년</label><br>
                 <input type="radio" id="4grade" name="grade" value="4">
-                <label for="4grade">4학년</label><br>
-
-                <
-
-
+                <label for="4grade">4학년</label><br><br>
+                <!-- 소속RC -->
+                <strong>소속 RC: </strong>
+                <input list="RCs" name="RC">
+                <datalist id="RCs">
+                    <option value="장기려">
+                    <option value="토레이">
+                    <option value="손양원">
+                    <option value="열송">
+                    <option value="카이퍼">
+                </datalist><br><br>
+                <!-- 수강중인 과목 선택 -->
+                <strong>이번학기에 수강중인 교양과목을 모두 선택해주세요</strong><br>
+                <input type="checkbox" id="class1" name="classes[]" value="ICT응용입문">
+                <label for="class1"> ICT응용입문 </label><br>
+                <input type="checkbox" id="class2" name="classes[]" value="소프트웨어입문">
+                <label for="class2"> 소프트웨어입문 </label><br>
+                <input type="checkbox" id="class3" name="classes[]" value="English Foundation">
+                <label for="class3"> English Foundation </label><br>
+                <input type="checkbox" id="class4" name="classes[]" value="C프로그래밍">
+                <label for="class4"> C프로그래밍 </label><br><br>
+                <!-- 전공 선택 -->
+                <strong>학부를 선택해주세요</strong><br>
+                <label for="department">학부:</label>
+                <select id="department" name="department">
+                    <option value="전산전자공학부">전산전자공학부</option>
+                    <option value="국제어문학부">국제어문학부</option>
+                    <option value="상담심리사회복지학부">상담심리사회복지학부</option>
+                    <option value="ICT창업학부">ICT창업학부</option>
+                </select><br><br>
+                <!-- 학부 선택 이유 -->
+                <strong>학부를 선택한 이유를 자유롭게 서술해주세요.</strong><br>
+                <textarea name="message" rows="10" cols="30">한동 중간고사 파이팅</textarea> <br><br>
+                <!-- 생일 입력 -->
+                <strong>생일을 입력해주세요</strong><br>
+                <label for="birthday">날짜:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <!-- 취미, 특기 입력 -->
+                <fieldset id="fieldset1">
+                    <legend><strong>취미와 특기</strong></legend>
+                    취미: <input type="text" id="hobby" name="hobby"><br>
+                    특기: <input type="text" id="speciality" name="speciality"><br>
+                </fieldset><br><br>
+                <!-- 다음학기 수강 희망 과목 -->
+                <strong><label for="nsemester">다음학기 수강 희망 과목:</label></strong>
+                <select  name="nsemester" id="nsemester">
+                    <optgroup label="전공">
+                        <option value="데이터구조">데이터구조</option>
+                        <option value="컴퓨터구조">컴퓨터구조</option>
+                        <option value="실전프로젝트1">실전프로젝트1</option>
+                    </optgroup>
+                    <optgroup label="교양">
+                        <option value="calculus1">calculus1</option>
+                        <option value="물리학1">물리학1</option>
+                    </optgroup>
+                </select><br><br>
+                <!-- 자유서술 -->
+                <strong>남기고 싶은 말을 자유롭게 서술해주세요.</strong><br>
+                <textarea name="message" rows="10" cols="30">교수님 과제 미뤄주셔서 감사합니다.</textarea> <br><br>
+                <p><input type="submit" value="저장"></p>
             </form>
         </div>
         <div>

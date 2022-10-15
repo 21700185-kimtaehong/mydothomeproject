@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--lang=en은 어디에 쓰는건지 모르겠음.-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- viewport는 사용자가 볼 수 있는 영역을 의미함. 컨텐츠의 세 가지 속성을 부여함으로써 어떤 화면에서든 잘 보이도록 설정 -->
+        <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+        <!-- 맨 위의 B 아이콘 이미지 추가 -->
+
+        <style>
+            body{
+                text-align: center!important;
+                margin: 0;
+                margin-top: 10%;
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+            }
+
+            .signin_form{
+                align-items:center;
+                vertical-align: middle;
+                width: 100%;
+                max-width: 330px;
+                padding: 15px;
+                margin: auto;
+            }
+
+            .form_input{
+                display: block;
+                width: 100%;
+                height: auto;
+                line-height: 1.5;
+
+                position: relative;
+                box-sizing: border-box;
+
+                padding: 10px;
+                font-size: 16px;
+            }
+
+            .btn{
+                padding-left: 16px;
+                padding-right: 16px;
+                padding-bottom: 8px;
+                padding-top: 8px;
+                width: 300px;
+                height: 48px;
+                color: #ffffff;
+                background-color: #007bff;
+                border-color: #007bff;
+                border-radius: 0.3rem;
+                font-weight: 400;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                font-size: 1.25rem;
+                border: 1px solid transparent;
+            }
+            #please{
+                font-size: 1.75rem;
+                line-height: 1.2;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="signin_form">
+            <form>
+                <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt width="72" height="72">
+                <h1 id="please">Please sign in</h1>
+                <input type="email" id="inputEmail" class="form_input" placeholder="Email Address" required autofocus>
+                <!-- input type을 email로 정하면 자동으로 aaa@bbb의 구조만 읽어들이게 함. place holder로 입력창 안에 설명 추가 -->
+                <input type="email" id="inputPassword" class="form_input" placeholder="Password" required autofocus>
+            </form>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="rememberme" value="rememberme">
+            <label for="rememberme"> Remember me </label>
+        </div>
+        <br>
+        <div>
+            <button class="btn" type="submit">Sign in</button>
+        </div>
+        <p class="mt-5 mb-3 text-muted" text-muted >© 2017-2018</p>
+    </body>
+
+</html>

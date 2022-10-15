@@ -5,7 +5,7 @@
       <paths name="dothome">
         <serverdata>
           <mappings>
-            <mapping deploy="/html" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/html" local="$PROJECT_DIR$/.idea/Myhome" web="/" />
             <mapping local="" />
           </mappings>
         </serverdata>
