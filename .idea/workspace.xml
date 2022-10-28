@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a867f38-d86b-411a-acd2-9185b0bf517c" name="Changes" comment="css working style1">
-      <change afterPath="$PROJECT_DIR$/.idea/Myhome/example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Myhome/form_ok.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Myhome/image/cat.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Myhome/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Myhome/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Myhome/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Myhome/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+    <list default="true" id="6a867f38-d86b-411a-acd2-9185b0bf517c" name="Changes" comment="project3 complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydothomeproject.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +30,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/GitHub/mydothomeproject/.idea/Myhome&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "last_opened_file_path": "C:/GitHub/mydothomeproject/.idea/Myhome",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.scopes"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\김태홍\IdeaProjects\mydothomeproject\.idea\Myhome" />
@@ -84,7 +79,8 @@
       <workItem from="1665746603073" duration="10006000" />
       <workItem from="1665763223878" duration="145000" />
       <workItem from="1665763421743" duration="11468000" />
-      <workItem from="1665819898388" duration="9868000" />
+      <workItem from="1665819898388" duration="10023000" />
+      <workItem from="1666961630334" duration="1163000" />
     </task>
     <task id="LOCAL-00001" summary="css working style1">
       <created>1665643502061</created>
@@ -100,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665643540251</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="project3 complete">
+      <created>1665832856998</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665832856998</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +124,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start" />
     <MESSAGE value="css working style1" />
-    <option name="LAST_COMMIT_MESSAGE" value="css working style1" />
+    <MESSAGE value="project3 complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="project3 complete" />
   </component>
 </project>
