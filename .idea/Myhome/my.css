@@ -1,0 +1,20 @@
+@media only screen and (min-width: 500px) {
+    .col-s-1 {text-align: center;}
+    .col-s-2 {text-align: center; width: 100%;}
+    .col-s-4 {width: 100%;}
+    .col-s-5 {margin-top: 10px;}
+    .col-s-6 {visibility: collapse;}
+    .col-s-8 {visibility: visible;}
+    .col-s-9 {visibility: collapse;}
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 {float: left; width: 70%; text-align: left; }
+    .col-2 {float: left; width: 70%; text-align: left;}
+    .col-4 {float: left; width: 70%; margin-bottom: 10px;}
+    .col-5 {float: right; width: 18%; height: 100%; margin-top: 10%;}
+    .col-6 {visibility: visible; }
+    .col-7 {visibility: visible; }
+    .col-8 {visibility: collapse;}
+    .col-9 {visibility: visible;}
+}

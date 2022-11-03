@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="my.css">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  #header{
+    background-color: #dddddd;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  #tname{
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  #students td, #students th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  tr:nth-child(odd)   {
+    background-color: #dddddd;
+  }
+
+
+</style>
+<body>
+<div>
+  <div class="col-1 col-s-1" id="header">
+    <h1>21700185 김태홍</h1>
+  </div>
+  <div class="col-2 col-s-2" id="tname">
+    <b>학생 정보 수정/삭제</b>
+  </div>
+  <div>
+    <table class="col-4 col-s-4" id="students">
+      <tbody>
+        <tr>
+          <th></th><th>이름</th><th>학년</th><th>RC</th><th>학부</th><th>생일</th>
+        </tr>
+        <tr>
+          <td>기존 정보</td>
+          <td id="sname"></td>
+          <td id="grade"></td>
+          <td id="RC"></td>
+          <td id="department"></td>
+          <td id="birthday"></td>
+        </tr>
+        <tr class="col-9 col-s-9">
+          <td>변경할 정보</td>
+          <td>
+            <input type="text" id="sname" name="sname">
+          </td>
+          <td>
+            <input type="radio" id="1grade" name="grade" value="1">
+            <label for="1grade">1학년</label><br>
+            <input type="radio" id="2grade" name="grade" value="2">
+            <label for="3grade">2학년</label><br>
+            <input type="radio" id="3grade" name="grade" value="3">
+            <label for="3grade">3학년</label><br>
+            <input type="radio" id="4grade" name="grade" value="4">
+            <label for="4grade">4학년</label>
+          </td>
+          <td>
+            <input list="RCs" name="RC">
+            <datalist id="RCs">
+              <option value="장기려">
+              <option value="토레이">
+              <option value="손양원">
+              <option value="열송">
+              <option value="카이퍼">
+            </datalist>
+          </td>
+          <td>
+            <select id="department" name="department">
+              <option value="전산전자공학부">전산전자공학부</option>
+              <option value="국제어문학부">국제어문학부</option>
+              <option value="상담심리사회복지학부">상담심리사회복지학부</option>
+              <option value="ICT창업학부">ICT창업학부</option>
+            </select>
+          </td>
+          <td>
+            <input type="date" id="birthday" name="birthday">
+          </td>
+        </tr>
+        <tr class="col-9 col-s-9">
+          <td><p><input type="submit" value="수정"></p></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><button onclick="confirmdelete()">삭제</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>
+
+<script>
+  window.onload = function () {
+    var name = window.localStorage.getItem('sname');
+    var grade = window.localStorage.getItem('grade');
+    var RC = window.localStorage.getItem('RC');
+    var department = window.localStorage.getItem('department');
+    var birthday = window.localStorage.getItem('birthday');
+  }
+
+  function confirmdelete(){
+    if(!confirm("삭제하시겠습니까?")){
+
+    }
+    else{
+      alert("삭제되었습니다.");
+    }
+  }
+
+  document.getElementById("sname").innerHTML = localStorage.getItem('sname');
+  document.getElementById("grade").innerHTML = localStorage.getItem('grade');
+  document.getElementById("RC").innerHTML = localStorage.getItem('RC');
+  document.getElementById("department").innerHTML = localStorage.getItem('department');
+  document.getElementById("birthday").innerHTML = localStorage.getItem('birthday');
+
+</script>

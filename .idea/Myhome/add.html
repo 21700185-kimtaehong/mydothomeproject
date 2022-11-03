@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="my.css">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    #header{
+        background-color: #dddddd;
+        color: #ffffff;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    #tname{
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    #students td, #students th {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    tr:nth-child(odd)   {
+        background-color: #dddddd;
+    }
+
+
+</style>
+<body>
+    <div>
+        <div class="col-1 col-s-1" id="header">
+            <h1>21700185 김태홍</h1>
+        </div>
+        <div class="col-2 col-s-2" id="tname">
+            <b>학생 정보 추가</b>
+        </div>
+        <div>
+            <form name="adds" action="add_ok.php" method="post" onSubmit="return validateForm()">
+            <table class="col-4 col-s-4" id="students">
+                <tbody>
+                    <tr>
+                        <th>이름</th><th>학년</th><th>RC</th><th>학부</th><th>생일</th><th class="col-6 col-s-6">메뉴</th>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="text" id="sname" name="sname">
+                        </td>
+                        <td>
+                            <input type="radio" id="1grade" name="grade" value="1">
+                            <label for="1grade">1학년</label><br>
+                            <input type="radio" id="2grade" name="grade" value="2">
+                            <label for="3grade">2학년</label><br>
+                            <input type="radio" id="3grade" name="grade" value="3">
+                            <label for="3grade">3학년</label><br>
+                            <input type="radio" id="4grade" name="grade" value="4">
+                            <label for="4grade">4학년</label>
+                        </td>
+                        <td>
+                            <input list="RCs" name="RC">
+                            <datalist id="RCs">
+                                <option value="장기려">
+                                <option value="토레이">
+                                <option value="손양원">
+                                <option value="열송">
+                                <option value="카이퍼">
+                            </datalist>
+                        </td>
+                        <td>
+                            <select id="department" name="department">
+                                <option value="전산전자공학부">전산전자공학부</option>
+                                <option value="국제어문학부">국제어문학부</option>
+                                <option value="상담심리사회복지학부">상담심리사회복지학부</option>
+                                <option value="ICT창업학부">ICT창업학부</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" id="birthday" name="birthday">
+                        </td>
+                        <td class="col-7 col-s-6">
+                            <p><input type="submit" value="추가"></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </form>
+        </div>
+        <div class="col-8 col-s-8">
+            <p><input type="submit" value="저장"></p>
+        </div>
+    </div>
+    <div>
+
+    </div>
+</body>
+<script>
+    function validateForm(){
+            //이름에 빈칸 있는지 검사
+            var sname = document.adds.sname;
+            if(sname.value == ""){
+                alert("이름을 입력하세요");
+                sname.focus();
+                return false;
+            }
+            if(sname.value.length < 2){
+                alert("이름을 2글자 이상 입력하세요");
+                return false;
+            }
+            // 학년 선택했는지 검사
+            var sgrade = document.adds.grade;
+            var oneg = document.getElementById('1grade');
+            var twog = document.getElementById('2grade');
+            var threeg = document.getElementById('3grade');
+            var fourg = document.getElementById('4grade');
+            if(!(oneg.checked || twog.checked || threeg.checked || fourg.checked)){
+                alert("학년을 선택해주세요");
+                sgrade.value.focus();
+                return false;
+            }
+            // RC 선택했는지 검사
+            var sRC = document.adds.RC;
+            if(sRC.value == ""){
+                alert("RC를 입력하세요");
+                sname.focus();
+                return false;
+            }
+            if(sname.value.length < 2){
+                alert("RC 이름을 2글자 이상 입력하세요");
+                return false;
+            }
+            //날짜 입력했는지 검사
+            var sdate = document.adds.birthday;
+            if(sdate.value == ""){
+                alert("날짜를 선택하세요");
+                sdate.focus();
+                return false;
+            }
+    }
+</script>
+</html>

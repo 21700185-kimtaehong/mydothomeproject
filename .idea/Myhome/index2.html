@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="my.css">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  #students {
+    border-collapse: collapse;
+  }
+
+  #tablename {
+    text-align: center;
+  }
+
+  #students td, #students th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  tr:nth-child(odd){
+    background-color: #dddddd;
+  }
+
+  #header{
+    background-color: #dddddd;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  #tname{
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+  }
+
+</style>
+<body>
+  <div class="col-1 col-s-1" id="header">
+    <h1>21700185 김태홍</h1>
+  </div>
+  <div class="col-2 col-s-2" id="tname">
+    <b>학생 정보</b>
+  </div>
+  <div class="col-3 col-s-3">
+    <table class="col-4 col-s-4" id="students">
+      <tbody>
+        <tr>
+          <th>이름</th><th>학년</th><th>RC</th><th>학부</th><th>생일</th><th>메뉴</th>
+        </tr>
+        <tr>
+          <td>김태홍</td><td>1</td><td>열송</td><td>전산전자공학부</td><td>1998-05-07</td>
+        </tr>
+        <tr>
+          <td>김건수</td><td>1</td><td>열송</td><td>국제어문학부</td><td>2002-07-18</td>
+        </tr>
+        <tr>
+          <td>노현윤</td><td>4</td><td>손양원</td><td>ICT창업학부</td><td>1999-12-12</td>
+        </tr>
+        <tr>
+          <td>이동현</td><td>3</td><td>토레이</td><td>전산전자공학부</td><td>2000-09-05</td>
+        </tr>
+        <tr>
+          <td>홍길동</td><td>2</td><td>카이퍼</td><td>상담심리사회복지학부</td><td>2001-01-22</td>
+        </tr>
+        <tr>
+          <td>이춘향</td><td>2</td><td>카이퍼</td><td>상담심리사회복지학부</td><td>2001-03-17</td>
+        </tr>
+        <tr>
+          <td>이몽룡</td><td>1</td><td>장기려</td><td>ICT창업학부</td><td>2002-04-30</td>
+        </tr>
+        <tr>
+          <td>김춘자</td><td>4</td><td>열송</td><td>전산전자공학부</td><td>1999-11-01</td>
+        </tr>
+        <tr>
+          <td>김춘배</td><td>3</td><td>장기려</td><td>국제어문학부</td><td>2000-10-20</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-5 col-s-5">
+    <button onclick="location.href=add.html">학생 추가</button>
+  </div>
+</body>
+</html>
